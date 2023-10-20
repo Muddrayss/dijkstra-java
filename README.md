@@ -56,9 +56,9 @@ The main classes include:
 The underlying logic for the shortest path algorithm is based on the following rules:
 
 1. Every time we set out to visit a new node, we choose the node with the smallest known distance/cost to visit first.
-2. Once we’ve moved to the node we’re going to visit, we check each of its neighboring nodes.
-3. For each neighboring node, we calculate the distance/cost for the neighboring nodes by summing the cost of the edges that lead to the node we’re checking from the starting vertex.
-4. If the distance/cost to a node is less than a known distance, we update the shortest distance on file for that vertex.
+2. Once we’ve moved to the node we’re going to visit, we check each of its neighboring (adjacentNodes in this case) nodes.
+3. For each neighboring node, we calculate the distance/cost for the neighboring nodes by summing the cost of the edges that lead to the node we’re checking from the starting node.
+4. If the distance/cost to a node is less than a known distance, we update the shortest distance on file for that node.
 
 ## Features
 
@@ -69,12 +69,6 @@ The underlying logic for the shortest path algorithm is based on the following r
 ## Contribution
 
 Contributions to enhance the functionalities or improve the code quality are welcome. Please fork this repository and create a pull request. Ensure your code adheres to Java best practices.
-
----
-
-Remember, this is just a basic README. Depending on the actual complexity and requirements of the project, you might want to expand on sections, add installation instructions, dependencies, screenshots, etc.
-
-Certainly! Here's an addition to the `README.md` with a cool thank-you message from Muddrays (Ennio Gualandi):
 
 ---
 
